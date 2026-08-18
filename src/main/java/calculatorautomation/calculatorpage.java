@@ -47,7 +47,7 @@ public class calculatorpage {
 		driver.findElement(By.xpath("//span[@onclick='r(5)']")).click();
 		driver.findElement(By.xpath("//span[@onclick='r(6)']")).click();
 		Thread.sleep(1000);
-		//driver.findElement(By.xpath("//span[@onclick='r('-')']")).click();                                  //subtraction syambol
+		//driver.findElement(By.xpath("//span[text()='-']")).click();                                 //subtraction syambol
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//span[@onclick='r(1)']")).click();
 		driver.findElement(By.xpath("//span[@onclick='r(2)']")).click();
@@ -56,7 +56,8 @@ public class calculatorpage {
 
 		System.out.println("subtraction button is clicked successfully");
 		//driver.findElement(By.linkText("Back")).click();
-		//driver.findElement(By.xpath("//span[@class='scieq']")).click();
+		driver.findElement(By.xpath("//span[text()='AC']")).click();
+		Thread.sleep(1000);
 		
 		
 	}
@@ -65,7 +66,7 @@ public class calculatorpage {
 		driver.findElement(By.xpath("//span[@onclick='r(3)']")).click();
 		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
 		Thread.sleep(1000);
-		//driver.findElement(By.xpath("//span[@onclick='r('*')']")).click();                                 //multiplication symbol
+		//driver.findElement(By.xpath("//span[text()='*']")).click();                                 //multiplication symbol
 		//driver.findElement(By.xpath("//span[@onclick='r(2)']")).click();
 		//driver.findElement(By.linkText("Back")).click();
 		driver.findElement(By.xpath("//span[@class='scieq']")).click();
@@ -77,7 +78,7 @@ public class calculatorpage {
 		driver.findElement(By.xpath("//span[@onclick='r(3)']")).click();
 		driver.findElement(By.xpath("//span[@onclick='r(7)']")).click();
 		Thread.sleep(1000);
-		//driver.findElement(By.xpath("//span[@onclick='r('/')']")).click();                          //division symbol
+		//driver.findElement(By.xpath("//span[text()='/']")).click();                          //division symbol
 		//driver.findElement(By.linkText("/")).click();
 		
 		driver.findElement(By.xpath("//span[@onclick='r(5)']")).click();
