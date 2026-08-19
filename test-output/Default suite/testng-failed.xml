@@ -5,7 +5,12 @@
     <classes>
       <class name="Trigonometry.setup_calculator">
         <methods>
+          <include name="sin45"/>
+          <include name="sin90"/>
           <include name="lounch"/>
+          <include name="sinpi"/>
+          <include name="sin60"/>
+          <include name="sin30"/>
         </methods>
       </class> <!-- Trigonometry.setup_calculator -->
     </classes>

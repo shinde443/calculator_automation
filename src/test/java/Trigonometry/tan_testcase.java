@@ -7,19 +7,19 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class tan_testcase {
+public class tan_testcase extends cos_testcase{
 	
-	ChromeDriver driver;
+	//ChromeDriver driver;
 	
-	@BeforeSuite
-	void lounch()
-	{
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://www.calculator.net/");
-	}
+	//@BeforeSuite
+//	void lounch()
+//	{
+//		driver=new ChromeDriver();
+//		driver.manage().window().maximize();
+//		driver.get("https://www.calculator.net/");
+//	}
 	
-	@BeforeMethod
+	@Test(priority=11)
 	void tan30() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='tan']")).click();
@@ -31,7 +31,7 @@ public class tan_testcase {
 		 Thread.sleep(1000);
 	}
 
-	@AfterClass
+	@Test(priority=12)
 	void tan45() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='tan']")).click();
@@ -44,7 +44,7 @@ public class tan_testcase {
 		 
 	}
 	
-	@Test
+	@Test(priority=13)
 	void tan60() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='tan']")).click();
@@ -57,7 +57,7 @@ public class tan_testcase {
 	}
 	
 	
-	@Test(priority=0)
+	@Test(priority=14)
 	void tan90() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='tan']")).click();
@@ -70,7 +70,7 @@ public class tan_testcase {
 	}
 	
 	
-	@Test(priority=0)
+	@Test(priority=15)
 	void tanpi() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='tan']")).click();

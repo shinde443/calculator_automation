@@ -1,54 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-18T20:49:38 IST" name="Default suite" finished-at="2026-08-18T20:49:43 IST" duration-ms="4575">
+  <suite started-at="2026-08-19T11:21:08 IST" name="Default suite" finished-at="2026-08-19T11:22:00 IST" duration-ms="52067">
     <groups>
     </groups>
-    <test started-at="2026-08-18T20:49:38 IST" name="Default test" finished-at="2026-08-18T20:49:43 IST" duration-ms="4575">
-      <class name="Trigonometry.setup_calculator">
-        <test-method signature="lounch()[pri:0, instance:Trigonometry.setup_calculator@4c583ecf]" started-at="2026-08-18T20:49:38 IST" name="lounch" finished-at="2026-08-18T20:49:43 IST" duration-ms="4518" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.chrome.ChromeDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at Trigonometry.sin_testcase.sin30(sin_testcase.java:22)
-at Trigonometry.setup_calculator.lounch(setup_calculator.java:21)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test started-at="2026-08-19T11:21:08 IST" name="Default test" finished-at="2026-08-19T11:22:00 IST" duration-ms="52067">
+      <class name="Trigonometry.tan_testcase">
+        <test-method is-config="true" signature="lounch()[pri:0, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:03 IST" name="lounch" finished-at="2026-08-19T11:21:08 IST" duration-ms="5438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lounch -->
-      </class> <!-- Trigonometry.setup_calculator -->
+        <test-method signature="sin30()[pri:1, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:08 IST" name="sin30" finished-at="2026-08-19T11:21:13 IST" duration-ms="4485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sin30 -->
+        <test-method signature="sin60()[pri:2, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:13 IST" name="sin60" finished-at="2026-08-19T11:21:17 IST" duration-ms="4350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sin60 -->
+        <test-method signature="sin45()[pri:3, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:17 IST" name="sin45" finished-at="2026-08-19T11:21:21 IST" duration-ms="4363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sin45 -->
+        <test-method signature="sin90()[pri:4, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:21 IST" name="sin90" finished-at="2026-08-19T11:21:26 IST" duration-ms="4367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sin90 -->
+        <test-method signature="sinpi()[pri:5, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:26 IST" name="sinpi" finished-at="2026-08-19T11:21:29 IST" duration-ms="3244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sinpi -->
+        <test-method signature="cos30()[pri:6, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:29 IST" name="cos30" finished-at="2026-08-19T11:21:32 IST" duration-ms="3366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cos30 -->
+        <test-method signature="cos45()[pri:7, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:32 IST" name="cos45" finished-at="2026-08-19T11:21:36 IST" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cos45 -->
+        <test-method signature="cos60()[pri:8, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:36 IST" name="cos60" finished-at="2026-08-19T11:21:39 IST" duration-ms="3266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cos60 -->
+        <test-method signature="cos90()[pri:9, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:39 IST" name="cos90" finished-at="2026-08-19T11:21:42 IST" duration-ms="3353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cos90 -->
+        <test-method signature="cospi()[pri:10, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:42 IST" name="cospi" finished-at="2026-08-19T11:21:45 IST" duration-ms="2215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cospi -->
+        <test-method signature="tan30()[pri:11, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:45 IST" name="tan30" finished-at="2026-08-19T11:21:48 IST" duration-ms="3333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tan30 -->
+        <test-method signature="tan45()[pri:12, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:48 IST" name="tan45" finished-at="2026-08-19T11:21:51 IST" duration-ms="3343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tan45 -->
+        <test-method signature="tan60()[pri:13, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:51 IST" name="tan60" finished-at="2026-08-19T11:21:55 IST" duration-ms="3351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tan60 -->
+        <test-method signature="tan90()[pri:14, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:55 IST" name="tan90" finished-at="2026-08-19T11:21:58 IST" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tan90 -->
+        <test-method signature="tanpi()[pri:15, instance:Trigonometry.tan_testcase@1573f9fc]" started-at="2026-08-19T11:21:58 IST" name="tanpi" finished-at="2026-08-19T11:22:00 IST" duration-ms="2259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tanpi -->
+      </class> <!-- Trigonometry.tan_testcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

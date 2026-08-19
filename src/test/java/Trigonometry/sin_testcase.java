@@ -2,11 +2,12 @@ package Trigonometry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class sin_testcase {
+public class sin_testcase extends setup_calculator{
 	
-	ChromeDriver driver;
+//	ChromeDriver driver;
 	
 //	@Test(priority=1)
 //	void lounch()
@@ -16,7 +17,7 @@ public class sin_testcase {
 //	driver.get("https://www.calculator.net/");
 //	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	void sin30() throws InterruptedException
 	   {
 		driver.findElement(By.xpath("//span[@class='scifunc']")).click();
@@ -28,7 +29,7 @@ public class sin_testcase {
 		 Thread.sleep(2000);
 	  }
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	void sin60() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[@class='scifunc']")).click();
@@ -39,7 +40,7 @@ public class sin_testcase {
 		 driver.findElement(By.xpath("//span[text()='AC']")).click();
 		 Thread.sleep(2000);
 	}
-	@Test(priority=4)
+	@Test(priority=3)
 	void sin45() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[@class='scifunc']")).click();
@@ -51,7 +52,7 @@ public class sin_testcase {
 		 Thread.sleep(2000);
 	}
 	
-	@Test(priority=5)
+	@Test(priority=4)
 	void sin90() throws InterruptedException
 	{
 		 driver.findElement(By.xpath("//span[@class='scifunc']")).click();
@@ -63,7 +64,7 @@ public class sin_testcase {
 		 Thread.sleep(2000);
 	}
 	
-	@Test(priority=6)
+	@Test(priority=5)
 	void sinpi() throws InterruptedException
 	{
 		 driver.findElement(By.xpath("//span[@class='scifunc']")).click();

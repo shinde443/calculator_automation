@@ -10,18 +10,18 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class cos_testcase {
-	ChromeDriver driver;
+public class cos_testcase extends sin_testcase{
+	//ChromeDriver driver;
 	
-	@BeforeSuite
-	void lounch()
-	{
-	 driver=new ChromeDriver();
-	 driver.manage().window().maximize();
-	 driver.get("https://www.calculator.net/");
-	}
+//	@BeforeSuite
+//	void lounch()
+//	{
+//	 driver=new ChromeDriver();
+//	 driver.manage().window().maximize();
+//	 driver.get("https://www.calculator.net/");
+//	}
 	
-	@BeforeMethod
+	@Test(priority=6)
 	void cos30() throws InterruptedException
 	{
 		 driver.findElement(By.xpath("//span[text()='cos']")).click();
@@ -33,7 +33,7 @@ public class cos_testcase {
 		 Thread.sleep(1000);
 	}
 	
-	@Test
+	@Test(priority=7)
 	void cos45() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='cos']")).click();
@@ -45,7 +45,7 @@ public class cos_testcase {
 		 Thread.sleep(1000);
 	}
 	
-	@AfterClass
+	@Test(priority=8)
 	void cos60() throws InterruptedException
 	{
 		 driver.findElement(By.xpath("//span[text()='cos']")).click();
@@ -57,7 +57,7 @@ public class cos_testcase {
 		 Thread.sleep(1000);
 	}
 	
-	@AfterMethod
+	@Test(priority=9)
 	void cos90() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='cos']")).click();
@@ -69,7 +69,7 @@ public class cos_testcase {
 		 Thread.sleep(1000);
 	}
 	
-	@AfterTest
+	@Test(priority=10)
 	void cospi() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//span[text()='cos']")).click();
